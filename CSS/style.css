@@ -1,0 +1,371 @@
+@import url('https://fonts.googleapis.com/css2?family=Kode+Mono:wght@400..700&family=Share+Tech+Mono&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    --cor-primaria: black;
+    --cor-secundaria: #A0153E;
+    --cor-fonte: #f6f6f6;
+    --cor-footer: #FF204E;
+
+    --fonte-primaria: "Kode Mono", monospace;
+    --fonte-secundaria: "Share Tech Mono", monospace;
+
+    --24px-rem: 1.5rem;
+    --26px-rem: 1.625rem;
+    --32px-rem: 2rem;
+}
+
+strong {
+    color: var(--cor-footer);
+}
+
+header {
+    display: flex;
+    align-items: center;
+    gap: 8%;
+    padding: 2% 0% 2% 15%;  
+}
+
+.header_index {
+    display: flex;
+    align-items: center;
+    gap: 8%;
+    padding: 2.8% 0% 2.8% 15%;  
+}
+
+.header_links {
+    text-decoration: none; 
+    color: var(--cor-footer);
+    font-family: var(--fonte-secundaria);
+    font-size: var(--26px-rem);
+    font-weight: 500;
+}
+
+.logo_steam {
+    width: 11%;
+    height: 11%;
+}
+
+.header_links_steam {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5%;
+    padding: 0.4%;
+    text-decoration: none; 
+    box-sizing: border-box;
+    color: var(--cor-fonte);
+    font-family: var(--fonte-secundaria);
+    font-size: var(--26px-rem);
+    font-weight: 500;
+    border: solid var(--cor-secundaria);
+    border-radius: 5px;
+    width: 23%;
+    
+}
+
+body {
+    box-sizing: border-box;
+    background-color: var(--cor-primaria);
+}
+
+main {
+    padding: 5% 0% 10% 0%;
+}
+
+
+.links_jogos {
+    color: #f6f6f6;
+    display: flex;
+    align-items: center;
+    gap: 7%;
+    text-decoration: none;
+    font-family: var(--fonte-primaria);
+    font-weight: 500;
+    font-size: var(--26px-rem);
+    transition: transform 0.4s;
+    width: 50%;
+}
+
+.links_jogos:hover {
+    transform: scale(1.1);
+}
+
+.links {
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    padding-left: 14%;
+    gap: 20em;
+}
+
+.jogos_imagem {
+    width: 300px;
+    height: 300px;
+    border-radius: 10%;
+    border: solid var(--cor-secundaria);
+}
+
+footer {
+    font-family: var(--fonte-secundaria);
+    display: flex;
+    justify-content: center;
+    background-color: var(--cor-footer);
+    padding: 15px 0px 15px 0px;
+}
+
+
+/* ABOUT CONFIG */
+
+.conteudo{
+    display: flex;
+    justify-content: center;
+    gap: 5%;
+}
+
+.conteudo_textos {
+    color: var(--cor-fonte);
+    font-family: var(--fonte-primaria);
+    display: flex;
+    flex-direction: column;
+    gap: 6em;
+    width: 40%;
+}
+
+.texto {
+    display: flex;
+    flex-direction: column;
+    gap: 2em;
+    width: 100%;
+}
+
+.conteudo_textos_titulo {
+    font-weight: 700;
+    font-size: var(--32px-rem);
+    color: var(--cor-secundaria);
+    font-family: var(--fonte-primaria);
+    border-left: solid var(--cor-secundaria);
+    padding-left: 2%;
+}
+
+.conteudo_textos_paragrafo {
+    font-weight: 500;
+    font-size: var(--24px-rem);
+
+}
+
+.conteudo_imagem {
+    border: solid var(--cor-footer);
+    border-radius: 15px;
+}
+
+/* GAMES PART */
+.logo_jogo {
+    height: 8%;
+    width: 8%;
+    border: solid var(--cor-footer);
+    border-radius: 20px;
+}
+
+.cabecalho_item {
+    color:var(--cor-secundaria);
+}
+
+.cabecalho_jogo {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2%;
+}
+
+.apresentacao_jogo {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
+    gap: 8em;
+}
+
+.cabecalho_jogo_items {
+    color: var(--cor-fonte);
+    font-family: var(--fonte-primaria);
+    font-size: 1rem;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5em;
+    border-left: solid var(--cor-footer);
+    border-radius: 2px;
+    padding: 0.5% 0% 0.5% 1%
+    
+}
+
+.imagem_milku_sac{
+    border: solid var(--cor-footer);
+    border-radius: 15px;
+    height: 80%;
+}
+
+.conteudo_apresentacao_jogo_1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5%;
+   
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    
+}
+
+.conteudo_textos_paragrafo_jogo {
+    font-size: var(--24px-rem);
+}
+
+.conteudo_apresentacao_jogo_2 {
+    display: flex;
+    justify-content: center;
+    gap: 5%;
+}
+
+.milku_andando {
+    border: solid var(--cor-footer);
+    border-radius: 15px;
+    height: 70%;
+}
+
+.conteudo_textos_paragrafo_jogo2 {
+    font-size: var(--24px-rem);
+    width: 60%;
+    color: var(--cor-fonte);
+    font-family: var(--fonte-primaria);
+}
+
+/* #################################################################### UNDERTALE #################################################################### */
+
+.apresentacao_undertale {
+    display: flex;
+    justify-content: center;
+    box-sizing: border-box;
+    gap: 5%;
+}
+
+.sobre_jogo_textos {
+    display: flex;
+    flex-direction: column;
+    gap: 2em;
+    width: 40%;
+    box-sizing: border-box;
+    font-family: var(--fonte-primaria);
+}
+
+.conteudo_apresentacao_undertale_paragrafo {
+    box-sizing: border-box;
+    font-size: var(--24px-rem);
+    color: var(--cor-fonte);
+    font-family: var(--fonte-primaria);
+}
+
+.imagem1_undertale {
+    border: solid var(--cor-footer);
+    border-radius: 15px;
+}
+
+.sans {
+    width: 16%;
+   padding-left: 50%;
+}
+
+.finais_undertale {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 5em;
+    width: 100%;
+    font-family: var(--fonte-primaria);
+}
+
+.finais_undertale_sub {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2em;
+    width: 60%;
+    border: solid var(--cor-secundaria);
+    padding: 2.5%;
+    border-radius: 15px;
+}
+
+.conteudo_apresentacao_undertale_requisitos {
+    box-sizing: border-box;
+    font-size: 1.375rem;
+    color: var(--cor-fonte);
+    font-family: var(--fonte-primaria);
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+    padding-left: 6%;
+}
+
+li {
+    list-style-type: none;
+    position:relative;
+}
+
+li:before {
+    content: '->';
+    color: var(--cor-footer);
+    left: -1.5em;
+    display: inline-block;
+    position: absolute;
+}
+
+.undertale_pacifista {
+    width: 55%;
+}
+
+.strong2 {
+    color: var(--cor-secundaria)
+}
+
+.imagem2_undertale {
+    border-bottom: solid var(--cor-footer);
+    border-radius: 12px;
+    width: 30%;
+}
+
+.apresentacao_undertale2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
+    gap: 5%;
+}
+
+.music_c {
+    width: 40%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    gap: 2em;
+    align-items: center;
+
+}
+
+.music_descricao {
+    box-sizing: border-box;
+    font-size: 1.2rem;
+    color: var(--cor-fonte);
+    font-family: var(--fonte-primaria);
+    border-bottom: solid var(--cor-footer);
+    border-radius: 3px;
+}
+

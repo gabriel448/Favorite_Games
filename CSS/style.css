@@ -74,7 +74,7 @@ body {
 }
 
 main {
-    padding: 5% 0% 10% 0%;
+    padding: 5% 0% 5% 0%;
 }
 
 
@@ -101,6 +101,7 @@ main {
     flex-direction: column;
     padding-left: 14%;
     gap: 20em;
+    padding-bottom: 10%;
 }
 
 .jogos_imagem {
@@ -164,6 +165,31 @@ footer {
 }
 
 /* GAMES PART */
+
+.botoes_footer{
+    display: flex;
+    justify-content: center;
+}
+
+.home_a {
+    font-family: var(--fonte-primaria);
+    font-size: var(--32px-rem);
+    text-decoration: none;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    border-bottom: solid var(--cor-secundaria);
+    border-radius: 5px;
+    color: var(--cor-fonte);
+    padding: 15% 40% 15% 40%;
+    transition: transform 0.3s;
+}
+
+.home_a:hover {
+    border-bottom: solid var(--cor-footer);
+    transform: scale(1.03);
+}
+
 .logo_jogo {
     height: 8%;
     width: 8%;
@@ -206,7 +232,6 @@ footer {
 }
 
 .imagem_milku_sac{
-    border: solid var(--cor-footer);
     border-radius: 15px;
     height: 80%;
 }
@@ -236,9 +261,9 @@ footer {
 }
 
 .milku_andando {
-    border: solid var(--cor-footer);
     border-radius: 15px;
-    height: 70%;
+    width: 30%;
+    height: 30%;
 }
 
 .conteudo_textos_paragrafo_jogo2 {
@@ -274,7 +299,6 @@ footer {
 }
 
 .imagem1_undertale {
-    border: solid var(--cor-footer);
     border-radius: 15px;
 }
 
@@ -337,7 +361,7 @@ li:before {
 }
 
 .imagem2_undertale {
-    border-bottom: solid var(--cor-footer);
+    
     border-radius: 12px;
     width: 30%;
 }
@@ -357,7 +381,7 @@ li:before {
     flex-direction: column;
     gap: 2em;
     align-items: center;
-
+    padding: 0% 0% 5% 0%;
 }
 
 .music_descricao {
@@ -369,3 +393,30 @@ li:before {
     border-radius: 3px;
 }
 
+body::-webkit-scrollbar {
+    width: 6px;               /* width of the entire scrollbar */
+  }
+  
+  body::-webkit-scrollbar-track {
+    background: black;        /* color of the tracking area */
+  }
+  
+  body::-webkit-scrollbar-thumb {
+    background-color: var(--cor-footer);    /* color of the scroll thumb */
+    border-radius: 20px;       /* roundness of the scroll thumb */
+  }
+
+/* #################################################################### FRAN BOW #################################################################### */
+
+.apresentacao_franbow {
+    display: flex;
+    justify-content: center;
+    box-sizing: border-box;
+    gap: 5%;
+    align-items: center;
+}
+
+.itward {
+    width: 45%;
+    padding: 0% 0% 0% 27.5%;
+}

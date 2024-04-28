@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Kode+Mono:wght@400..700&family=Share+Tech+Mono&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Special+Elite&display=swap');
 
 * {
     margin: 0;
@@ -314,6 +315,7 @@ footer {
     gap: 5em;
     width: 100%;
     font-family: var(--fonte-primaria);
+    padding: 0% 0% 5% 0%;
 }
 
 .finais_undertale_sub {
@@ -418,4 +420,53 @@ body::-webkit-scrollbar {
 .itward {
     width: 45%;
     padding: 0% 0% 0% 27.5%;
+}
+
+.about_dimention {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2em;
+    width: 60%;
+}
+
+.img_dimentions {
+    border-radius: 15px;
+    width: 60%;
+}
+
+.img_dimentions2 {
+    border-radius: 15px;
+    width: 70%;
+}
+
+.remor {
+    width: 20%;
+}
+
+.conteudo_apresentacao_undertale_paragrafo2 {
+    box-sizing: border-box;
+    font-size: var(--24px-rem);
+    color: var(--cor-fonte);
+    font-family: var(--fonte-primaria);
+    display: flex;
+    align-items: center;
+}
+
+.conteudo_apresentacao_undertale_paragrafo1 {
+    box-sizing: border-box;
+    font-size: var(--24px-rem);
+    color: var(--cor-fonte);
+    font-family: var(--fonte-primaria);
+    text-align: justify;
+}
+/* #################################################################### LITTLE MISFORTUNE #################################################################### */
+
+.alem {
+    font-weight: 700;
+    font-size: var(--32px-rem);
+    color: var(--cor-secundaria);
+    font-family: var(--fonte-primaria);
+    font-family: "Special Elite", system-ui;
+    font-weight: 400;
 }

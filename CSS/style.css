@@ -280,6 +280,7 @@ footer {
     justify-content: center;
     box-sizing: border-box;
     gap: 5%;
+    align-items: center;
 }
 
 .sobre_jogo_textos {
@@ -303,7 +304,7 @@ footer {
 }
 
 .sans {
-    width: 16%;
+    width: 13%;
    padding-left: 50%;
 }
 

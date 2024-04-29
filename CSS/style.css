@@ -471,3 +471,27 @@ body::-webkit-scrollbar {
     font-family: "Special Elite", system-ui;
     font-weight: 400;
 }
+
+/* #################################################################### COFFE TALK #################################################################### */
+
+.imgs_coffe_talk {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2em;
+
+}
+
+.img3_coffetalk {
+    border-radius: 15px;
+    width: 40%;
+}
+
+.apresentacao_coffetalk {
+    display: flex;
+    justify-content: center;
+    box-sizing: border-box;
+    gap: 2%;
+    align-items: center;
+}

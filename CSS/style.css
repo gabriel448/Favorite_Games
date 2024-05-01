@@ -15,6 +15,7 @@
     --fonte-primaria: "Kode Mono", monospace;
     --fonte-secundaria: "Share Tech Mono", monospace;
 
+    --20px-rem: 1.25rem;
     --24px-rem: 1.5rem;
     --26px-rem: 1.625rem;
     --32px-rem: 2rem;
@@ -72,10 +73,25 @@ header {
 body {
     box-sizing: border-box;
     background-color: var(--cor-primaria);
+    overflow-x: hidden;
 }
 
 main {
     padding: 5% 0% 5% 0%;
+}
+
+@keyframes apper{
+    from{
+        opacity: 0;
+        scale: 0.5;
+        translate: 50vw 0 0 0;
+    }
+
+    to {
+        opacity: 1;
+        scale: 1;
+        translate: 0 0 0 0;
+    }
 }
 
 
@@ -90,6 +106,9 @@ main {
     font-size: var(--26px-rem);
     transition: transform 0.4s;
     width: 50%;
+    animation: apper 1ms ease-in-out;
+    animation-timeline: view();
+    animation-range: cover 0% cover 50%;
 }
 
 .links_jogos:hover {
@@ -106,8 +125,8 @@ main {
 }
 
 .jogos_imagem {
-    width: 300px;
-    height: 300px;
+    width: 35%;
+    
     border-radius: 10%;
     border: solid var(--cor-secundaria);
 }
@@ -127,6 +146,7 @@ footer {
     display: flex;
     justify-content: center;
     gap: 5%;
+    align-items: center;
 }
 
 .conteudo_textos {
@@ -136,6 +156,48 @@ footer {
     flex-direction: column;
     gap: 6em;
     width: 40%;
+}
+.titulo_links {
+    display: flex;
+    justify-content: center;
+}
+.links_pai {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 3em;
+    animation: apper 1ms ease-in-out;
+    animation-timeline: view();
+    animation-range: cover 0% cover 20%;
+}
+
+.links_links {
+    display: flex;
+    justify-content: center;
+    gap: 5%;
+}
+
+.link_social{
+    display: flex;
+    text-decoration: none;
+    color: #f6f6f6;
+    justify-content: center;
+    align-items: center;
+    gap: 5%;
+    border: solid var(--cor-secundaria);
+    border-radius: 12px;
+    padding: 2%;
+    width: 30%;
+    transition: transform 0.4s;
+}
+
+.link_social:hover {
+    transform: scale(1.1);
+}
+
+.links_logo {
+    width: 10%;
 }
 
 .texto {
@@ -152,16 +214,41 @@ footer {
     font-family: var(--fonte-primaria);
     border-left: solid var(--cor-secundaria);
     padding-left: 2%;
+    animation: apper 1ms ease-in-out;
+    animation-timeline: view();
+    animation-range: cover 0% cover 40%;
 }
 
 .conteudo_textos_paragrafo {
     font-weight: 500;
     font-size: var(--24px-rem);
+    animation: apper 1ms ease-in-out;
+    animation-timeline: view();
+    animation-range: cover 0% cover 40%;
 
+}
+
+.conteudo_textos_titulo_e {
+    font-weight: 700;
+    font-size: var(--32px-rem);
+    color: var(--cor-secundaria);
+    font-family: var(--fonte-primaria);
+    border-left: solid var(--cor-secundaria);
+    padding-left: 2%;
+    animation: apper 0.5s;
+}
+
+.conteudo_textos_paragrafo_e {
+    font-weight: 500;
+    font-size: var(--24px-rem);
+    animation: apper 0.5s;
 }
 
 .conteudo_imagem {
     border-radius: 15px;
+    animation: apper 1ms ease-in-out;
+    animation-timeline: view();
+    animation-range: cover 0% cover 40%;
 }
 
 /* GAMES PART */
@@ -207,6 +294,7 @@ footer {
     justify-content: center;
     align-items: center;
     gap: 2%;
+    animation: apper 0.5s;
 }
 
 .apresentacao_jogo {
@@ -234,6 +322,9 @@ footer {
 .imagem_milku_sac{
     border-radius: 15px;
     height: 80%;
+    animation: apper 1ms ease-in-out;
+    animation-timeline: view();
+    animation-range: cover 0% cover 40%;
 }
 
 .conteudo_apresentacao_jogo_1 {
@@ -254,6 +345,13 @@ footer {
     font-size: var(--24px-rem);
 }
 
+.conteudo_textos_paragrafo_jogo_a {
+    font-size: var(--24px-rem);
+    animation: apper 1ms ease-in-out;
+    animation-timeline: view();
+    animation-range: cover 0% cover 40%;
+}
+
 .conteudo_apresentacao_jogo_2 {
     display: flex;
     justify-content: center;
@@ -264,6 +362,15 @@ footer {
     border-radius: 15px;
     width: 30%;
     height: 30%;
+    animation: apper 1ms ease-in-out;
+    animation-timeline: view();
+    animation-range: cover 0% cover 40%;
+}
+
+.gameplay_ {
+    animation: apper 1ms ease-in-out;
+    animation-timeline: view();
+    animation-range: cover 0% cover 40%;
 }
 
 .conteudo_textos_paragrafo_jogo2 {
@@ -271,6 +378,38 @@ footer {
     width: 60%;
     color: var(--cor-fonte);
     font-family: var(--fonte-primaria);
+}
+
+.conteudo_apresentacao_undertale_paragrafo_underline {
+    box-sizing: border-box;
+    font-size: var(--24px-rem);
+    color: var(--cor-fonte);
+    font-family: var(--fonte-primaria);
+    border-bottom: solid var(--cor-footer);
+    padding-bottom: 0.5%;
+    animation: apper 1ms ease-in-out;
+    animation-timeline: view();
+    animation-range: cover 0% cover 40%;
+}
+
+.conteudo_apresentacao_undertale_paragrafo_underline2 {
+    box-sizing: border-box;
+    font-size: var(--20px-rem);
+    color: var(--cor-fonte);
+    font-family: var(--fonte-primaria);
+    border-bottom: solid var(--cor-secundaria);
+    padding-bottom: 0.5%;
+    animation: apper 1ms ease-in-out;
+    animation-timeline: view();
+    animation-range: cover 0% cover 40%;
+}
+
+.img_mobm_finals {
+    border-radius: 15px;
+    width: 70%;
+    animation: apper 1ms ease-in-out;
+    animation-timeline: view();
+    animation-range: cover 0% cover 40%;
 }
 
 /* #################################################################### UNDERTALE #################################################################### */
@@ -299,13 +438,50 @@ footer {
     font-family: var(--fonte-primaria);
 }
 
+.conteudo_apresentacao_undertale_paragrafo_a {
+    box-sizing: border-box;
+    font-size: var(--24px-rem);
+    color: var(--cor-fonte);
+    font-family: var(--fonte-primaria);
+    animation: apper 1ms ease-in-out;
+    animation-timeline: view();
+    animation-range: cover 0% cover 40%;
+}
+
+
+.conteudo_apresentacao_undertale_paragrafo_d {
+    box-sizing: border-box;
+    font-size: var(--24px-rem);
+    color: var(--cor-fonte);
+    font-family: var(--fonte-primaria);
+}
+
+.conteudo_apresentacao_undertale_paragrafo_e {
+    box-sizing: border-box;
+    font-size: var(--24px-rem);
+    color: var(--cor-fonte);
+    font-family: var(--fonte-primaria);
+}
+
 .imagem1_undertale {
     border-radius: 15px;
+    animation: apper 1ms ease-in-out;
+    animation-timeline: view();
+    animation-range: cover 0% cover 40%;
 }
 
 .sans {
     width: 13%;
    padding-left: 50%;
+   animation: apper 1ms ease-in-out;
+   animation-timeline: view();
+   animation-range: cover 0% cover 30%;
+}
+
+.sansneutro {
+    animation: apper 1ms ease-in-out;
+    animation-timeline: view();
+    animation-range: cover 0% cover 40%;
 }
 
 .finais_undertale {
@@ -328,6 +504,9 @@ footer {
     border: solid var(--cor-secundaria);
     padding: 2.5%;
     border-radius: 15px;
+    animation: apper 1ms ease-in-out;
+    animation-timeline: view();
+    animation-range: cover 0% cover 30%;
 }
 
 .conteudo_apresentacao_undertale_requisitos {
@@ -344,6 +523,9 @@ footer {
 li {
     list-style-type: none;
     position:relative;
+    animation: apper 1ms ease-in-out;
+    animation-timeline: view();
+    animation-range: cover 0% cover 35%;
 }
 
 li:before {
@@ -356,6 +538,15 @@ li:before {
 
 .undertale_pacifista {
     width: 55%;
+    animation: apper 1ms ease-in-out;
+    animation-timeline: view();
+    animation-range: cover 0% cover 40%;
+}
+
+.nobody {
+    animation: apper 1ms ease-in-out;
+    animation-timeline: view();
+    animation-range: cover 0% cover 40%;
 }
 
 .strong2 {
@@ -366,6 +557,9 @@ li:before {
     
     border-radius: 12px;
     width: 30%;
+    animation: apper 1ms ease-in-out;
+    animation-timeline: view();
+    animation-range: cover 0% cover 40%;
 }
 
 .apresentacao_undertale2 {
@@ -393,6 +587,7 @@ li:before {
     font-family: var(--fonte-primaria);
     border-bottom: solid var(--cor-footer);
     border-radius: 3px;
+    animation: apper 0.5s;
 }
 
 body::-webkit-scrollbar {
@@ -421,28 +616,34 @@ body::-webkit-scrollbar {
 .itward {
     width: 45%;
     padding: 0% 0% 0% 27.5%;
+    animation: apper 1ms ease-in-out;
+    animation-timeline: view();
+    animation-range: cover 0% cover 40%;
 }
 
 .about_dimention {
     display: flex;
     flex-direction: column;
+    justify-content: center;
     align-items: center;
     gap: 2em;
     width: 60%;
 }
 
-.img_dimentions {
-    border-radius: 15px;
-    width: 60%;
-}
 
 .img_dimentions2 {
     border-radius: 15px;
     width: 70%;
+    animation: apper 1ms ease-in-out;
+    animation-timeline: view();
+    animation-range: cover 0% cover 40%;
 }
 
 .remor {
     width: 20%;
+    animation: apper 1ms ease-in-out;
+    animation-timeline: view();
+    animation-range: cover 0% cover 40%;
 }
 
 .conteudo_apresentacao_undertale_paragrafo2 {
@@ -460,6 +661,9 @@ body::-webkit-scrollbar {
     color: var(--cor-fonte);
     font-family: var(--fonte-primaria);
     text-align: justify;
+    animation: apper 1ms ease-in-out;
+    animation-timeline: view();
+    animation-range: cover 0% cover 40%;
 }
 /* #################################################################### LITTLE MISFORTUNE #################################################################### */
 
@@ -470,6 +674,9 @@ body::-webkit-scrollbar {
     font-family: var(--fonte-primaria);
     font-family: "Special Elite", system-ui;
     font-weight: 400;
+    animation: apper 1ms ease-in-out;
+    animation-timeline: view();
+    animation-range: cover 0% cover 40%;
 }
 
 /* #################################################################### COFFE TALK #################################################################### */
@@ -486,6 +693,9 @@ body::-webkit-scrollbar {
 .img3_coffetalk {
     border-radius: 15px;
     width: 40%;
+    animation: apper 1ms ease-in-out;
+    animation-timeline: view();
+    animation-range: cover 0% cover 40%;
 }
 
 .apresentacao_coffetalk {
